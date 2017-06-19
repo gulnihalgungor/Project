@@ -1,0 +1,31 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title> React </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.0/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.0/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+<script type="text/babel">
+	var App = React.createClass({
+	eylem:function(){
+	alert("fonksiyon oluşturuldu");
+	},
+	
+render:function(){
+	return (<button onClick={this.eylem}> tikla</button>)
+	}
+	})
+
+	ReactDOM.render(<App/>, document.getElementById("bilesen"));
+</script>
+
+</head>
+<body>
+
+<div id="bilesen"></div>
+
+</body>
+</html>
